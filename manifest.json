@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "סורק וירוסטוטאל",
+    "version": "0.0.1",
+    "author": "chv - netfree user & netfree fan",
+    "description": "שולח כל כתובת שאתם נכנסים אליה, לבדיקה בשירות ציון האמינות וירוסטוטאל, ומחווה את הציון שהתקבל בסמל התוסף",
+    "icons": {
+      "24": "icons/iconcolor24.png",
+      "32": "icons/iconcolor32.png",
+      "64": "icons/iconcolor64.png",
+      "128": "icons/iconcolor128.png"
+    },
+  
+    "background": {
+      "scripts": ["background.js", "cors.js"]
+    },
+  
+    "browser_action": {
+      "default_icon": "icons/icongray24.png"
+    },
+
+    "options_ui": {
+      "page": "option.html"
+    },
+  
+    "permissions": [
+      "activeTab",
+      "notifications",
+      "tabs",
+      "contextMenus",
+      "webRequest",
+      "webRequestBlocking",
+      "storage",
+      "<all_urls>"
+    ]
+  }
